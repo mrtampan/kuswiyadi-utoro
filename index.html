@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio dan Resume Profesional Kuswiyadi Utoro - Electrical Engineer & Teknisi Listrik Industri berpengalaman lebih dari 8 tahun di bidang pemeliharaan mesin, panel kontrol, dan trouble shooting.">
+  <meta name="keywords" content="Kuswiyadi Utoro, Electrical Engineer, Teknisi Listrik, Mekanik Listrik, Maintenance, Troubleshooting, Portofolio, Bekasi">
+  <meta name="author" content="Kuswiyadi Utoro">
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Kuswiyadi Utoro - Electrical Engineer & Industrial Technician">
+  <meta property="og:description" content="Portofolio profesional dan riwayat kerja Kuswiyadi Utoro di bidang kelistrikan industri, maintenance mesin, dan panel kontrol.">
+  <meta property="og:type" content="website">
+
+  <title>Kuswiyadi Utoro | Electrical Engineer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow Accents -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M20 6L9 17l-5-5"/>
+    </svg>
+    <span id="toast-message">Tersalin ke clipboard!</span>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-text">Kuswiyadi Utoro</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#tentang" class="nav-item">Tentang</a>
+        <a href="#pengalaman" class="nav-item">Pengalaman</a>
+        <a href="#keahlian" class="nav-item">Keahlian</a>
+        <a href="#pendidikan" class="nav-item">Pendidikan</a>
+        <a href="#kontak" class="nav-item">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cv_kuswiyadi_utoro.pdf" download="CV_Kuswiyadi_Utoro.pdf" class="btn-outline-sm btn-download-nav" title="Download Curriculum Vitae (PDF)" target="_blank">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Download CV</span>
+        </a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Buka Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-indicator"></span>
+            <span>Tersedia untuk Peluang Karir Baru</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo, Saya <span class="gradient-text">Kuswiyadi Utoro</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="tech-tag">Electrical Engineer</span>
+            <span class="divider-bullet">•</span>
+            <span class="tech-tag">Industrial Electric Mechanic</span>
+          </div>
+
+          <p class="hero-desc">
+            Teknisi Kelistrikan Industri dengan pengalaman komprehensif lebih dari 8 tahun dalam pemeliharaan preventif, perakitan panel kontrol, troubleshooting motor 3 fasa, dan optimasi operasional mesin industri.
+          </p>
+
+          <!-- Quick Contact Bar -->
+          <div class="hero-contact-strip">
+            <div class="contact-pill" onclick="copyText('081290716415', 'Nomor HP/WhatsApp berhasil disalin!')" title="Klik untuk salin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              <span>0812-9071-6415</span>
+              <span class="copy-badge">Salin</span>
+            </div>
+
+            <div class="contact-pill" onclick="copyText('kuswiyadiutoro@gmail.com', 'Alamat Email berhasil disalin!')" title="Klik untuk salin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>kuswiyadiutoro@gmail.com</span>
+              <span class="copy-badge">Salin</span>
+            </div>
+
+            <div class="contact-pill static-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Tambun Selatan, Kab. Bekasi</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="hero-actions">
+            <a href="https://wa.me/6281290716415?text=Halo%20Pak%20Kuswiyadi%20Utoro,%20saya%20tertarik%20dengan%20profil%20dan%20pengalaman%20Anda." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.08-1.1l-.29-.17-3.03.79.81-2.95-.19-.3a8.21 8.21 0 01-1.26-4.32c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.23-.19-.48-.31z"/>
+              </svg>
+              <span>Hubungi via WhatsApp</span>
+            </a>
+            <a href="cv_kuswiyadi_utoro.pdf" download="CV_Kuswiyadi_Utoro.pdf" class="btn btn-download" target="_blank" title="Unduh Curriculum Vitae Kuswiyadi Utoro (PDF)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Download CV (PDF)</span>
+            </a>
+            <a href="mailto:kuswiyadiutoro@gmail.com" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>Kirim Email</span>
+            </a>
+            <a href="#pengalaman" class="btn btn-ghost">Lihat Pengalaman &darr;</a>
+          </div>
+        </div>
+
+        <!-- Quick Summary Card -->
+        <div class="hero-stats-card">
+          <div class="card-glass">
+            <div class="card-header-badge">
+              <span class="badge-icon">&#9889;</span>
+              <span>Ringkasan Profesional</span>
+            </div>
+            
+            <div class="stat-grid">
+              <div class="stat-item">
+                <div class="stat-num">8+</div>
+                <div class="stat-label">Tahun Pengalaman Industri</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">5+</div>
+                <div class="stat-label">Tahun Mekanik & Teknisi Listrik</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">3-Phase</div>
+                <div class="stat-label">Spesialis Motor & Inverter</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Dedikasi Preventif & K3</div>
+              </div>
+            </div>
+
+            <div class="card-footer-info">
+              <div class="info-row">
+                <span class="info-title">Pendidikan Terakhir:</span>
+                <span class="info-value">SMK Teknik Elektronika Industri</span>
+              </div>
+              <div class="info-row">
+                <span class="info-title">Domisili:</span>
+                <span class="info-value">Bekasi, Jawa Barat</span>
+              </div>
+              <div class="info-row">
+                <span class="info-title">Status Saat Ini:</span>
+                <span class="info-value status-active">Available (Open for Opportunities)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang / Bio Section -->
+    <section id="tentang" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Biografi Singkat</span>
+          <h2 class="section-title">Tentang Saya</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <p class="about-lead">
+              Nama saya <strong>Kuswiyadi Utoro</strong>, lulusan SMK Karya Nusantara tahun 2017 jurusan <strong>Teknik Elektronika Industri</strong>.
+            </p>
+            <p>
+              Saya memiliki latar belakang kerja yang solid di lingkungan manufaktur dan industri modern:
+            </p>
+            <ul class="about-list">
+              <li>
+                <span class="check-icon">&#10003;</span>
+                <span><strong>5 Tahun di PT Karang Buanaindah</strong> sebagai <em>Mekanik Listrik</em> (Januari 2021 – Oktober 2026).</span>
+              </li>
+              <li>
+                <span class="check-icon">&#10003;</span>
+                <span><strong>1 Tahun di PT Nutrifood Indonesia</strong> sebagai <em>Penata Fill Pack</em> (2020) dengan standar 5R & efisiensi target tinggi.</span>
+              </li>
+              <li>
+                <span class="check-icon">&#10003;</span>
+                <span><strong>2 Tahun di PT Astra Komponen Indonesia (ASKI)</strong> sebagai <em>PPIC</em> (2018 – 2019) dengan sistem SAP & supply chain part.</span>
+              </li>
+            </ul>
+            <p>
+              Selama berkarir, saya terbukti mampu menyelesaikan tugas pekerjaan dengan tuntas dan teliti, handal dalam melakukan perbaikan (troubleshooting) maupun perawatan preventif pada mesin-mesin industri. Saat ini, saya terus mencari kesempatan untuk mengembangkan karir dan memberikan kontribusi terbaik sebagai seorang ahli dalam bidang teknisi kelistrikan.
+            </p>
+          </div>
+
+          <div class="about-highlights-card">
+            <h3 class="highlight-title">Kompetensi Utama</h3>
+            
+            <div class="competency-box">
+              <div class="comp-icon">&#128295;</div>
+              <div class="comp-body">
+                <h4>Troubleshooting & Perbaikan Cepat</h4>
+                <p>Mendiagnosis kerusakan komponen listrik seperti inverter, kontaktor, relay, MCB, breaker, hingga penanganan kabel konsleting pada mesin produksi.</p>
+              </div>
+            </div>
+
+            <div class="competency-box">
+              <div class="comp-icon">&#9881;</div>
+              <div class="comp-body">
+                <h4>Instalasi & Perakitan Panel Kontrol</h4>
+                <p>Wiring dan assembly panel kelistrikan baru, instalasi mesin, jalur daya motor 3 fasa, instalasi CCTV, dan perangkat pendukung.</p>
+              </div>
+            </div>
+
+            <div class="competency-box">
+              <div class="comp-icon">&#128203;</div>
+              <div class="comp-body">
+                <h4>Preventive Maintenance & Safety</h4>
+                <p>Pemeriksaan rutin kelistrikan, pengujian alat ukur (multimeter, insulation tester), kepatuhan keselamatan kerja (K3), dan pelaporan teknis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman Kerja Section -->
+    <section id="pengalaman" class="section section-darker">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Riwayat Karir</span>
+          <h2 class="section-title">Pengalaman Kerja</h2>
+          <p class="section-subtitle">Track record profesional di sektor manufaktur komponen otomotif, makanan & minuman, dan industri fabrikasi.</p>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: PT Karang Buanaindah -->
+          <div class="timeline-item current-job">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="role-group">
+                  <span class="company-badge current">Pekerjaan Saat Ini</span>
+                  <h3 class="role-title">Mekanik Listrik</h3>
+                  <h4 class="company-name">PT Karang Buanaindah</h4>
+                </div>
+                <div class="period-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                  <span>Januari 2021 — Oktober 2026 (6 Tahun)</span>
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <ul class="job-duties">
+                  <li>Melakukan perawatan pemeliharaan rutin (preventive maintenance) di setiap lini mesin-mesin industri pabrik.</li>
+                  <li>Melakukan pembersihan berkala panel-panel kontrol dan unit motor 3 fasa guna mencegah overheat dan downtime mesin.</li>
+                  <li>Melakukan troubleshooting cepat saat terjadi kendala mesin, khusus pada cakupan kelistrikan seperti penggantian motor, inverter, kontaktor, relay, MCB, breaker, dan perbaikan kabel konsleting.</li>
+                  <li>Melakukan instalasi mesin baru serta perakitan (wiring & assembly) panel kontrol dari awal.</li>
+                  <li>Memasang dan menghubungkan instalasi kelistrikan baru, termasuk perakitan panel kontrol, sistem CCTV, dan peralatan elektrik pabrik lainnya.</li>
+                  <li>Mendiagnosis kerusakan sistem kelistrikan, mengganti komponen yang aus/rusak, dan melakukan uji fungsi untuk memastikan sistem kembali beroperasi normal.</li>
+                  <li>Melakukan pengujian pada sistem kelistrikan untuk memastikan standar keselamatan kerja (K3) dan kinerja optimal menggunakan alat ukur pengujian presisi.</li>
+                  <li>Membuat dokumentasi dan laporan komprehensif terkait pekerjaan harian, temuan anomali/masalah, serta rekomendasi perbaikan berkala.</li>
+                </ul>
+
+                <div class="tags-container">
+                  <span class="tag">Motor 3-Phase</span>
+                  <span class="tag">Inverter</span>
+                  <span class="tag">Panel Control Wiring</span>
+                  <span class="tag">Kontaktor & Relay</span>
+                  <span class="tag">Troubleshooting</span>
+                  <span class="tag">Preventive Maintenance</span>
+                  <span class="tag">CCTV Installation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: PT Nutrifood Indonesia -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="role-group">
+                  <h3 class="role-title">Penata Fill Pack</h3>
+                  <h4 class="company-name">PT Nutrifood Indonesia</h4>
+                </div>
+                <div class="period-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                  <span>Februari 2020 — November 2020</span>
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <ul class="job-duties">
+                  <li>Memastikan kualitas akhir produk berada dalam kondisi "OK" sesuai standard quality assurance perusahaan.</li>
+                  <li>Melakukan inspeksi ketat untuk memastikan kemasan produk tidak bocor, robek, atau cacat saat proses pengemasan berkecepatan tinggi.</li>
+                  <li>Menjalankan alur proses packaging dan menyusun produk jadi di atas pallet secara presisi dan rapi untuk proses pergudangan.</li>
+                  <li>Konsisten mencapai target kuota produksi harian dan per jam dengan tingkat akurasi tinggi.</li>
+                  <li>Menerapkan dan menjaga budaya 5R di area kerja produksi (Ringkas, Rapi, Resik, Rawat, Rajin) untuk menjamin standar higienitas pangan.</li>
+                </ul>
+
+                <div class="tags-container">
+                  <span class="tag">Quality Inspection</span>
+                  <span class="tag">Packaging Process</span>
+                  <span class="tag">5R Implementation</span>
+                  <span class="tag">Target Oriented</span>
+                  <span class="tag">Food Grade Standards</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: PT Astra Komponen Indonesia -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="role-group">
+                  <h3 class="role-title">PPIC (Production Planning & Inventory Control)</h3>
+                  <h4 class="company-name">PT Astra Komponen Indonesia (ASKI)</h4>
+                </div>
+                <div class="period-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                  <span>Januari 2018 — Desember 2019 (2 Tahun)</span>
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <ul class="job-duties">
+                  <li>Mengatur dan mengawasi seluruh proses persiapan delivery komponen otomotif kepada customer.</li>
+                  <li>Berkoordinasi aktif lintas departemen (Produksi, Gudang, Ekspedisi) untuk sinkronisasi jadwal pengiriman.</li>
+                  <li>Menyiapkan fisik barang dan komponen yang akan dikirim sesuai dengan purchase order.</li>
+                  <li>Menerbitkan surat jalan resmi menggunakan sistem enterprise SAP secara akurat dan tepat waktu.</li>
+                  <li>Mencatat dan memverifikasi data spesifikasi delivery produk sesuai standar ketat Astra Group.</li>
+                  <li>Mengelola dashboard monitoring stok dan monitoring delivery guna menghindari keterlambatan kirim.</li>
+                  <li>Melaksanakan stock opname berkala per 6 bulan untuk validasi kesesuaian sistem dengan fisik gudang.</li>
+                  <li>Melakukan pengecekan incoming parts sebelum material dialirkan ke area warehouse.</li>
+                  <li>Berinisiatif membuat proposal ide perbaikan (Kaizen/Development & Improvement) untuk efisiensi operasional.</li>
+                </ul>
+
+                <div class="tags-container">
+                  <span class="tag">SAP Enterprise</span>
+                  <span class="tag">Stock Monitoring</span>
+                  <span class="tag">Stock Opname</span>
+                  <span class="tag">Surat Jalan</span>
+                  <span class="tag">Kaizen & Improvement</span>
+                  <span class="tag">Automotive Parts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keahlian / Skills Section -->
+    <section id="keahlian" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Kualifikasi Teknis</span>
+          <h2 class="section-title">Keahlian & Kompetensi</h2>
+          <p class="section-subtitle">Kombinasi keahlian praktikal di lapangan pabrik serta kapabilitas administrasi & software industri.</p>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Electrical & Wiring -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-badge">&#9889;</div>
+              <h3 class="cat-title">Kelistrikan & Wiring</h3>
+            </div>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Wiring & Perakitan Panel Kontrol</span>
+                  <span class="skill-level">Mahir</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Instalasi Motor Listrik 3-Phase</span>
+                  <span class="skill-level">Mahir</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Pemasangan Inverter & Setting</span>
+                  <span class="skill-level">Kompeten</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Penggantian Kontaktor, Relay, MCB</span>
+                  <span class="skill-level">Mahir</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 2: Maintenance & Troubleshooting -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-badge">&#128295;</div>
+              <h3 class="cat-title">Maintenance & Problem Solving</h3>
+            </div>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Troubleshooting Kerusakan Mesin</span>
+                  <span class="skill-level">Mahir</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Preventive & Routine Maintenance</span>
+                  <span class="skill-level">Mahir</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Penanganan Kabel Korslet / Grounding</span>
+                  <span class="skill-level">Mahir</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Uji Alat Ukur & Kelayakan K3</span>
+                  <span class="skill-level">Kompeten</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 3: Software & Administrasi -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-badge">&#128187;</div>
+              <h3 class="cat-title">Software & Administrasi</h3>
+            </div>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Microsoft Excel (Reporting & Data)</span>
+                  <span class="skill-level">Mahir</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Microsoft Office (Word, PowerPoint)</span>
+                  <span class="skill-level">Kompeten</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SAP Application (Surat Jalan & Logistic)</span>
+                  <span class="skill-level">Kompeten</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Pembuatan Laporan Teknis Mesin</span>
+                  <span class="skill-level">Mahir</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tag Cloud of Keywords -->
+        <div class="skills-chips-wrapper">
+          <span class="chip-label">Kata Kunci Utama:</span>
+          <span class="skill-chip">Wiring Listrik</span>
+          <span class="skill-chip">Maintenance Mesin</span>
+          <span class="skill-chip">Troubleshooting</span>
+          <span class="skill-chip">Motor 3 Phasa</span>
+          <span class="skill-chip">Inverter</span>
+          <span class="skill-chip">Kontaktor & Relay</span>
+          <span class="skill-chip">Breaker & MCB</span>
+          <span class="skill-chip">Instalasi CCTV</span>
+          <span class="skill-chip">MS Excel</span>
+          <span class="skill-chip">MS Office</span>
+          <span class="skill-chip">Aplikasi SAP</span>
+          <span class="skill-chip">Budaya 5R</span>
+          <span class="skill-chip">Stock Opname</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pendidikan Section -->
+    <section id="pendidikan" class="section section-darker">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Latar Belakang Edukasi</span>
+          <h2 class="section-title">Pendidikan Formal</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon-col">
+            <div class="edu-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-top-row">
+              <span class="edu-years">2014 — 2017</span>
+              <span class="edu-status-tag">Lulus Terverifikasi</span>
+            </div>
+            <h3 class="edu-school">SMK Karya Nusantara</h3>
+            <h4 class="edu-major">Jurusan: Teknik Elektronika Industri</h4>
+            <p class="edu-desc">
+              Mempelajari dasar elektronika terapan, rangkaian komponen elektronika, sistem kontrol industri, kelistrikan arus lemah dan arus kuat, pengenalan sensor, perakitan rangkaian, serta keselamatan kerja bengkel elektronika.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Komunikasi & Interview</span>
+          <h2 class="section-title">Hubungi Saya</h2>
+          <p class="section-subtitle">Siap untuk dihubungi perihal wawancara kerja, diskusi peluang, atau kunjungan teknis.</p>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="contact-card-grid">
+          <!-- Card: WhatsApp / Telepon -->
+          <div class="contact-box">
+            <div class="box-icon-wrap wa-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.08-1.1l-.29-.17-3.03.79.81-2.95-.19-.3a8.21 8.21 0 01-1.26-4.32c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.23-.19-.48-.31z"/>
+              </svg>
+            </div>
+            <h3>Telepon / WhatsApp</h3>
+            <p class="contact-val">0812-9071-6415</p>
+            <div class="box-actions">
+              <a href="https://wa.me/6281290716415?text=Halo%20Pak%20Kuswiyadi%20Utoro,%20saya%20menghubungi%20Anda%20terkait%20peluang%20pekerjaan." target="_blank" rel="noopener noreferrer" class="btn-box-action">
+                Chat WhatsApp
+              </a>
+              <button onclick="copyText('081290716415', 'Nomor telepon disalin!')" class="btn-box-copy" title="Salin nomor">
+                Salin
+              </button>
+            </div>
+          </div>
+
+          <!-- Card: Email -->
+          <div class="contact-box">
+            <div class="box-icon-wrap email-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <h3>Email Resmi</h3>
+            <p class="contact-val">kuswiyadiutoro@gmail.com</p>
+            <div class="box-actions">
+              <a href="mailto:kuswiyadiutoro@gmail.com" class="btn-box-action">
+                Kirim Email Langsung
+              </a>
+              <button onclick="copyText('kuswiyadiutoro@gmail.com', 'Alamat email disalin!')" class="btn-box-copy" title="Salin email">
+                Salin
+              </button>
+            </div>
+          </div>
+
+          <!-- Card: Alamat Domisili -->
+          <div class="contact-box">
+            <div class="box-icon-wrap loc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3>Alamat Domisili</h3>
+            <p class="contact-val">Kp. Bulu RT 05 / 02, Desa Setiamekar, Tambun Selatan, Kab. Bekasi</p>
+            <div class="box-actions">
+              <a href="https://maps.google.com/?q=Kp.+Bulu+Setiamekar+Tambun+Selatan+Bekasi" target="_blank" rel="noopener noreferrer" class="btn-box-action">
+                Buka Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fast Message Box -->
+        <div class="quick-wa-form">
+          <div class="quick-wa-card">
+            <h3>Kirim Pesan Cepat ke WhatsApp</h3>
+            <p>Masukkan pesan singkat di bawah ini untuk langsung terhubung ke nomor WhatsApp saya:</p>
+            <form id="wa-form" class="wa-form-row">
+              <input type="text" id="wa-sender" placeholder="Nama Anda / Nama Perusahaan" required class="input-modern">
+              <input type="text" id="wa-msg" placeholder="Pesan singkat (contoh: Mengundang interview teknisi)" required class="input-modern flex-1">
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Kirim ke WA</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copy">&copy; <span id="current-year"></span> <strong>Kuswiyadi Utoro</strong>. All rights reserved.</p>
+        <p class="footer-sub">Electrical Engineer &bull; Industrial Electric Mechanic &bull; Bekasi, Indonesia</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top">Kembali ke Atas &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
